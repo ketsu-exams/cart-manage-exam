@@ -15,7 +15,7 @@ var productionId, productionURI, cartURI, cartId;
 
 describe("Test", function () {
   this.timeout(60000);
-  it("POST /productions -> 201", function (done) {
+  step("POST /productions -> 201", function (done) {
     var options = {
       url: endpoint + '/productions',
       method: 'POST',
@@ -39,7 +39,7 @@ describe("Test", function () {
     });
   });
   
-  it("GET /productions -> 200", function (done) {
+  step("GET /productions -> 200", function (done) {
     var options = {
       url: endpoint + '/productions',
       method: 'GET',
@@ -93,7 +93,7 @@ describe("Test", function () {
     });
   });
   
-  it("GET /productions/{productionId} -> 200", function (done) {
+  step("GET /productions/{productionId} -> 200", function (done) {
     var options = {
       url: endpoint + '/productions/' + productionId,
       method: 'GET',
@@ -143,7 +143,7 @@ describe("Test", function () {
     });
   });
   
-  it("PUT /productions/{productionId} -> 204", function (done) {
+  step("PUT /productions/{productionId} -> 204", function (done) {
     var options = {
       url: endpoint + '/productions/' + productionId,
       method: 'PUT',
@@ -164,7 +164,7 @@ describe("Test", function () {
     });
   });
   
-  it("DELETE /productions/{productionId} -> 204", function (done) {
+  step("DELETE /productions/{productionId} -> 204", function (done) {
     var options = {
       url: endpoint + '/productions/' + productionId,
       method: 'DELETE',
@@ -181,7 +181,7 @@ describe("Test", function () {
     });
   });
   
-  it("GET /productions/{productionId} -> 404", function (done) {
+  step("GET /productions/{productionId} -> 404", function (done) {
     var options = {
       url: endpoint + '/productions/' + productionId,
       method: 'GET',
@@ -199,7 +199,7 @@ describe("Test", function () {
   });
   
   
-  it("POST /carts -> 201", function (done) {
+  step("POST /carts -> 201", function (done) {
     var options = {
       url: endpoint + '/carts',
       method: 'POST',
@@ -229,7 +229,7 @@ describe("Test", function () {
     });
   });
   
-  it("GET /carts -> 200", function (done) {
+  step("GET /carts -> 200", function (done) {
     var options = {
       url: endpoint + '/carts',
       method: 'GET',
@@ -296,7 +296,7 @@ describe("Test", function () {
     });
   });
   
-  it("GET /carts/{cartId} -> 200", function (done) {
+  step("GET /carts/{cartId} -> 200", function (done) {
     var options = {
       url: endpoint + '/carts/' + cartId,
       method: 'GET',
@@ -354,7 +354,7 @@ describe("Test", function () {
     });
   });
   
-  it("PUT /carts/{cartId} -> 204", function (done) {
+  step("PUT /carts/{cartId} -> 204", function (done) {
     var options = {
       url: endpoint + '/carts/' + cartId,
       method: 'PUT',
@@ -383,7 +383,7 @@ describe("Test", function () {
     });
   });
   
-  it("DELETE /carts/{cartId} -> 204", function (done) {
+  step("DELETE /carts/{cartId} -> 204", function (done) {
     var options = {
       url: endpoint + '/carts/' + cartId,
       method: 'DELETE',
@@ -400,7 +400,7 @@ describe("Test", function () {
     });
   });
   
-  it("GET /carts/{cartId} -> 404", function (done) {
+  step("GET /carts/{cartId} -> 404", function (done) {
     var options = {
       url: endpoint + '/carts/' + cartId,
       method: 'GET',
