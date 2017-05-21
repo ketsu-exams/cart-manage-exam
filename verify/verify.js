@@ -169,7 +169,7 @@ describe("Test", function () {
       url: endpoint + '/productions/' + productionId,
       method: 'DELETE',
       qs: {},
-      json: {},
+      json: "",
       header: {}
     };
     
@@ -186,7 +186,7 @@ describe("Test", function () {
       url: endpoint + '/productions/' + productionId,
       method: 'GET',
       qs: {},
-      json: {},
+      json: "",
       header: {}
     };
     
@@ -205,7 +205,7 @@ describe("Test", function () {
       method: 'POST',
       qs: {},
       json: {
-        "userId": "1",
+        "userId": 1,
         "productions": [{
           "productionId": 1,
           "amount": 2
@@ -388,7 +388,7 @@ describe("Test", function () {
       url: endpoint + '/carts/' + cartId,
       method: 'DELETE',
       qs: {},
-      json: {},
+      json: "",
       header: {}
     };
     
@@ -405,7 +405,7 @@ describe("Test", function () {
       url: endpoint + '/carts/' + cartId,
       method: 'GET',
       qs: {},
-      json: {},
+      json: "",
       header: {}
     };
     
